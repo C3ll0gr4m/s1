@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>LOGOSHOES</title>
+  </head>
+  <body>
+    <div class="VIDE"></div>
+    <div id="CONTENU_DU_SITE">
+      <div id="menu">
+        <picture>
+          <img class="logo" src="Logo_TV_2015.png" alt="Logo">
+        </picture>
+        <a class="header" href="./index.html">Accueil</a>
+        <a class="header" href="#">Modèles pré-personnalisés</a>
+        <a class="header" href="./galerie.html">Personnaliser vos modèles</a>
+        <a class="header" id="certification" href="https://www.ecologie.gouv.fr/lecolabel-europeen">
+          <img class="logo" src="ecolabel-europeen-logo.jpg" alt="chaussures certifiées EUecolabel"></a>
+      </div>
+      <main id="main_perso">
+
+        <div id="photos_perso"> 
+          <img class="img_persos" src="basketblanche.webp" alt="vue du coté droit">
+          <img class="img_persos" src="basketblanche_vuederriere.webp" alt="vue de derrière">
+          <img class="img_persos" src="basketblanche2.webp" alt="vue du coté gauche">
+          <img class="img_persos" src="basketblanche_vuedessus.webp" alt="vue du dessus">
+        </div>
+
+        <section id="perso_formulaire">
+          <h2>Personnalisez votre paire de chaussure</h2>
+          <form action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
+            <div id="choix_couleur">
+              <h3>Choix des couleurs :</h3>
+
+              <label>
+                Sélectionnez la couleur principale :
+                <input type="color"
+                      value="#009900"
+                      id="color1">
+                    </label><br>
+
+                <label>Sélectionner la couleur contrastante :
+                  <input type="color"
+                        value="#009900"
+                        id="color2">
+                </label>
+            </div>
+            <div id="choix_matière">
+            <h3>Choix de la matière :</h3>
+
+            <label><input type="radio" name="matière" value="matière_origine" checked>Matière d'origine</label><br>
+            <label><input type="radio" name="matière" value="Cuire">Cuire</label><br>
+              <label><input type="radio" name="matière" value="Daim">Daim</label><br>
+              <label><input type="radio" name="matière" value="Métal">Métal</label><br>
+              <label><input type="radio" name="matière" value="Toile">Toile</label><br>
+
+            
+          </div>
+           
+          <h3>Choisissez une image que vous souhaitez voir sur votre chaussure</h3>
+          <label>
+              <input type="file">
+            </label>
+            
+            <div class="field">
+              <label for="sujet">Où voulez vous la positionner?
+              </label>
+                <select id="sujet" name="sujet">
+                  <option value="avant">Sur l'avant de la chaussure</option>
+                  <option value="arrière">Sur l'arrière de la chaussure</option>
+                  <option value="intérieur">Sur la côté intérieur de la chaussure</option>
+                  <option value="extérieur">Sur la côté intérieur de la chaussure</option>
+                </select>
+            </div>
+            <h3 id="instructions">Instructions spécifiques :</h3>
+
+            <div class="field message">
+              <label for="message">
+                <textarea name="message" id="message" cols="30" rows="2"></textarea>
+              </label>
+            </div>
+            <input type="image" src="ajout_panier.jpg" style="width:100%; max-width:350px" alt="Envoyer">          </form>
+        </section>
+        
+
+
+      </main>
+      <footer>
+        <div id="contacts">
+          <h2>Nous contacter</h2>
+          <p>Adresse:</p>
+          <p>23 rue de la République</p>
+          <p>69 002</p>
+          <p>Lyon</p>
+          <p>Téléphone:</p>
+          <p>0100000000</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.360026887918!2d4.834981225977266!3d45.76397454831744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eaf8a87cb4b5%3A0xe72381329bd06c7e!2s18%20Rue%20de%20la%20R%C3%A9publique%2C%2069002%20Lyon!5e0!3m2!1sfr!2sfr!4v1670857690468!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="horaires">
+          <table>
+            <tr>
+            <th>Lundi</th><th>10h-18h30</th>
+            </tr>
+            <tr>
+              <td>Mardi</td><td>10h-18h30</td>
+            </tr>
+            <tr>
+              <td>Mercredi</td><td>10h-18h30</td>
+            </tr>
+            <tr>
+              <td>Jeudi</td><td>10h-18h30</td>
+            </tr>
+            <tr>
+              <td>Vendredi</td><td>10h-18h30</td>
+            </tr>
+            <tr>
+              <td>Samedi</td><td>8h30-19h30</td>
+            </tr>
+            <tr id="dimanche">
+              <td>Dimanche</td><td>Fermé</td>
+            </tr>
+          </table>
+        </div>
+      </footer>
+    </div>
+    <div class="VIDE"></div>
+  </body>
+</html>
