@@ -1,0 +1,6 @@
+FROM alpine:3.9.3
+LABEL maintainer="Collabnix"
+
+ARG WELCOME_USER=Jules 
+RUN echo "Salut $WELCOME_USER !" > message.txt
+CMD cat message.txt
