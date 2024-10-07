@@ -1,0 +1,6 @@
+# 1st compilation
+# FROM busybox
+# ONBUILD RUN echo "You won't see me until later"
+
+# 2nd compilation
+FROM me/no_echo_here

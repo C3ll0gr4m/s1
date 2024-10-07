@@ -1,0 +1,4 @@
+FROM nginx:alpine
+LABEL version="1.0"
+LABEL description="This text illustrates \
+that label-values can span multiple lines."
